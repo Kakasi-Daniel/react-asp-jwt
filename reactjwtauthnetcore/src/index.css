@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100vw;
+    height: 70px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+nav{
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-family: 'Fira Code Retina', monospace;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+}
+
+nav .logo{
+    font-weight: 700;
+    font-size: 30px;
+    color: orange;
+    text-decoration: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: color .3s;
+}
+
+.menu a:visited{
+    color: #fff;
+}
+
+.menu a:hover{
+    color: orange;
+}
+
+.menu a.active{
+    color: orange;
+}
+
+.centered{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fira Code';
+}
+
+.home h1{
+    font-size: 4rem;
+}
+
+.form > *{
+    display: block;
+    margin: 10px auto;
+    width: 500px;
+}
+
+label > *{
+    display: block;
+}
+
+input{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px #000 solid;
+}
+
+button{
+    font-family: inherit;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.err{
+    color: orangered;
+    border-color: orangered;
+}
+
+button:disabled{
+    background-color: rgba(126, 87, 15, 0.5);
+    cursor: not-allowed;
+}
+
+h3{
+    text-align: center;
+    border: 3px red solid;
+    padding: 10px;
+    border-radius: 10px;
+    color: red;
+}
